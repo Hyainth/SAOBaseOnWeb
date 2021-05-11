@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script type="text/javascript" src="js/wow.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.3.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js" ></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+	</head>
+	<style>
+		.cd-vertical-nav a {
+		    font-size: 25px;
+		    text-decoration: none;
+		    color:white;
+		}	
+		.cd-vertical-nav a:hover{
+		    color:white;
+		}		
+		
+		a:hover{
+			text-decoration: none;
+			text-align: center;
+		}
+		
+		.col-md-6 span{
+			color: white;
+			text-align: center;
+			font-size: 30px;
+			font-family: "楷体";
+			position: relative;
+			left: 40%;
+		}
+		
+		span:hover{
+			text-decoration: none;
+		}
+		
+		.col-md-6 div img{
+			border:3px solid #000000;
+		}
+
+	</style>
+	<body style="background: url(img/background/background039.png);">
+		<nav class="cd-vertical-nav">
+			<ul>
+				<li>
+					<a href="index.html"><span class="label">首页</span></a>
+				</li>
+				<li>
+					<a href="storyMain.html"><span class="label">剧情</span></a>
+				</li>
+				<li>
+					<a href="role.html"><span class="label">人物</span></a>
+				</li>
+				<li>
+					<a href="hobby.html"><span class="label">周边</span></a>
+				</li>
+			</ul>
+		</nav>
+		
+		
+		
+		<canvas id="canvas" style="position: fixed; left: 0px;top: 0px;"></canvas>
+		<div class="container" style="overflow: hidden;width: 75%;">
+			<div class="row clearfix">
+				<div class="col-md-6 column wow slideInDown" style="height:100%;">
+					<div style="width: 100%;height: 100%;margin:20px auto;">
+						<a href="story.html"><img src="img/background/background064.png" style="height: 100%;width: 100%;border-radius: 30px;" /><span>刀剑神域I</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 column wow slideInRight" style="height:100%;">
+					<div style="width: 100%;height: 90%;margin:20px auto;">
+						<a href="https://baike.baidu.com/item/刀剑神域—ExtraEdition—/18261406?fr=aladdin&fromid=9673712&fromtitle=%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9FExtra+Edition"><img src="img/background/background056.png" style="height: 100%;width: 100%;border-radius: 30px;" /><span style="left:30%">刀剑神域Extra Edition</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="row clearfix" style="height: 50%;">
+				<div class="col-md-6 column wow slideInLeft" style="height: 100%;">
+					<div style="width: 100%;height: 90%;margin:20px auto;">
+						<a href="story2.html"><img src="img/background/background065.png" style="height: 100%;width: 100%;border-radius: 30px;" /><span >刀剑神域II</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 column wow slideInUp" style="height: 100%;">
+					<div style="width: 100%;height: 90%;margin:20px auto;">
+						<a href="http://sao-movie.net/"><img src="img/background/background030.png" style="height: 100%;width: 100%;border-radius: 30px;" /><span style="left:30%">刀剑神域：序列之争</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script>
+	var canvas = document.getElementById("canvas");
+	var can = canvas.getContext("2d");
+	var s = window.screen; //获取屏幕
+	var w = canvas.width = s.width; //获取屏幕宽度
+	var h = canvas.height = s.height; //获取屏幕高度
+
+	can.fillStyle = color2();
+
+	var words = Array(256).join("1").split("");
+	//设置一个包含256个空元素的数组，join("1")用来把数组里的元素拼接成字符串，split("")过滤掉数组里的空元素
+
+	setInterval(draw, 50);
+
+	// can.font="30px 微软雅黑"; //只设置一个不生效，一定要两个属性都设
+	// //绘制实心的文本：绘制的文本，文本的坐标x，文本的坐标y
+	// can.fillText("黑客帝国",100,100);
+	// // setInterval(draw,50);
+
+	function draw() {
+		//can.fillRect()画一个实心矩形:坐标x，坐标y，矩形宽，举行高
+		can.fillStyle = 'rgba(0,0,0,0.05)';
+		can.fillRect(0, 0, w, h);
+		can.fillStyle = color2();
+		words.map(function(y, n) {
+			text = String.fromCharCode(Math.ceil(65 + Math.random() * 57)); //转换为键盘上值
+			x = n * 10;
+			can.fillText(text, x, y)
+			words[n] = (y > 758 + Math.random() * 484 ? 0 : y + 10);
+		}); //数组元素的一个映射
+	}
+
+	//获取随机颜色，三种方法
+	function color1() {
+		var colors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+		var color = "";
+		for(var i = 0; i < 6; i++) {
+			//Math.random()产生一个0-1之间的小数
+			var n = Math.ceil(Math.random() * 15);
+			color += "" + colors[n];
+			// console.log(color);
+		}
+		return '#' + color;
+	}
+
+	function color2() {
+		var color = Math.ceil(Math.random() * 16777215).toString(16);
+		// for( var i=color.length; i<6; i++ ){
+		// 	color = '0'+color;
+		// }
+		while(color.length < 6) {
+			color = '0' + color;
+		}
+		return '#' + color;
+	}
+
+	function color3() {
+		return "#" + (function(color) {
+			return new Array(7 - color.length).join("0") + color;
+			//神奇的方法，总共字符串有6位，如果只产生了3位，则前面应该补三个0，在长度为7-3=4的空数组中利用join插入0，则为['',0,'',0,'',0,''],刚好三个0补在前面
+		})((Math.random() * 0x1000000 << 0).toString(16))
+		// << 0 也是一种取整的方法
+	}
+	
+	new WOW().init();
+</script>

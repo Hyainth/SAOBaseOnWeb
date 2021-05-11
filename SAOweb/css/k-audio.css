@@ -1,0 +1,121 @@
+code {
+				padding: 0 10px
+			}
+			
+			pre {
+				display: block;
+				background: #fbfbfb
+			}
+			
+			body {
+				background: #fff
+			}
+			
+			body,
+			html {
+				height: auto;
+			}
+			
+			.big {
+				color: #00bfff;
+				text-align: center;
+				font-size: x-large
+			}
+			
+			h1 {
+				font-size: 75pt
+			}
+			
+			h1,
+			h2 {
+				padding-top: 75pt
+			}
+			
+			h2 {
+				font-size: 90px
+			}
+			
+			button {
+				display: block;
+				margin: 10% auto;
+				padding: 10px 5px;
+				width: 30%;
+				height: auto;
+				border: hidden;
+				border-radius: 4px;
+				background-color: #ff6200;
+				color: #fff;
+				font-size: 50px;
+				transition: border .1s ease
+			}
+			
+			button:hover {
+				border: 4px inset #00bfff
+			}
+			
+			.fly {
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 10;
+				display: block;
+				width: 100%;
+				height: 60px;
+				background: #00bfff;
+				color: #fff;
+				font-size: 20px
+			}
+			
+			@media screen and (max-width:768px) {
+				button {
+					width: 60%
+				}
+			}
+			
+			@media screen and (max-width:500px) {
+				button {
+					width: 80%;
+					font-size: 30px
+				}
+				h1 {
+					margin: 0;
+					padding-top: 0;
+					padding-bottom: 30px;
+					font-size: 60px
+				}
+				h2 {
+					padding: 10px;
+					font-size: 45px
+				}
+			}
+			
+			@media screen and (max-width:431px) {
+				.fly {
+					height: 130px
+				}
+				.none {
+					height: 120px !important
+				}
+			}
+			
+			.index {
+				display: inline-block;
+				margin-bottom: 10px;
+				padding-top: 20px;
+				width: 75pt;
+				height: 70%;
+				max-height: 40px;
+				background: rgba(0, 0, 0, .1);
+				text-align: center;
+				cursor: pointer
+			}
+			
+			.kc-body {
+				display: block;
+				margin: 5px auto
+			}
+			
+			mark {
+				background: #00bfff;
+				color: #fff
+			}

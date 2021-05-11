@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/hobbymain.css" />
+		<link rel="stylesheet" href="css/hobbydefault.css" />
+		<link rel="stylesheet" href="css/hobbynormalize.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/zoom.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.3.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js" ></script>
+		<script type="text/javascript" src="js/zoom.js"></script>
+		<script type="text/javascript" src="js/wow.min.js" ></script>
+	</head>
+	<style>
+		.container .clearfix {
+			background-color: rgba(100, 100, 100, 0.68);
+			margin: 10px 0;
+			border-radius: 30px;
+		}
+		
+		.container .clearfix img {
+			margin: 10px;
+		}
+		
+		.col-md-7 dl {
+			color: white;
+		}
+		
+		.effect10 .info {
+			border-radius: 20px;
+			margin: 10px;
+			height: 300px;
+			width: 400px;
+		}
+		
+		.ih-item.square.effect10 .info {
+			background-color: rgba(100, 100, 100, 0.7);
+		}
+		
+		.cd-vertical-nav a {
+		    font-size: 25px;
+		    text-decoration: none;
+		    color:white;
+		}	
+		.cd-vertical-nav a:hover{
+		    color:white;
+		}		
+	</style>
+
+	<body style="background: url(img/role/background1.jpg);">
+		
+		<nav class="cd-vertical-nav">
+			<ul>
+				<li>
+					<a href="index.html"><span class="label">首页</span></a>
+				</li>
+				<li>
+					<a href="storyMain.html"><span class="label">剧情</span></a>
+				</li>
+				<li>
+					<a href="role.html"><span class="label">人物</span></a>
+				</li>
+				<li>
+					<a href="hobby.html"><span class="label">周边</span></a>
+				</li>
+			</ul>
+		</nav>
+		
+
+		<canvas id="canvas" style="position: fixed; left: 0px;top: 0px;"></canvas>
+		
+		<section>
+			<div class="container">
+				<div class="col-md-12 column">
+					<div id="GGO01" class="row clearfix wow fadeIn" data-wow-duration="2s" data-wow-delay="1.4s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0100.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第1集&nbsp;枪的世界</h3>
+										<p>回到现实世界快要满一年，桐人也逐渐适应现实。这天，他和亚丝娜约在东京的皇居见面，两人谈论著现实与虚拟世界的不同。而在那同时，热门拟真线上游戏“Gun Gale Online”中，却发生了有人在游戏里受到枪击，在现实中也同时心脏衰竭的奇特案件，并且类似的案件有二件。政府"假想课"的课员菊冈调二郎找上了桐人，希望他能潜入“Gun Gale Online”与凶手接触...</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第1集&nbsp;枪的世界</h1></dt>
+								<dd>回到现实世界快要满一年，桐人也逐渐适应现实。这天，他和亚丝娜约在东京的皇居见面，两人谈论著现实与虚拟世界的不同。而在那同时，热门拟真线上游戏“Gun Gale Online”中，却发生了有人在游戏里受到枪击，在现实中也同时心脏衰竭的奇特案件，并且类似的案件有二件。政府"假想课"的课员菊冈调二郎找上了桐人，希望他能潜入“Gun Gale Online”与凶手接触...</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0101.png" data-action="zoom" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0102.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0103.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div id="GGO02" class="row clearfix wow fadeIn" data-wow-duration="2s" data-wow-delay="3.2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第2集&nbsp;冰之狙击手</h1></dt>
+								<dd>使用大型反物质狙击枪“黑卡蒂II”而活跃于GGO世界的中的狙击手少女诗乃与她所属的六人中队正在伏击另一组中队。诗乃成功狙击第一目标后，对第二目标——一名巨汉的狙击却是以行动失败收场。同时，该名巨汉在披风下的武器的真面目，居然是一把迷你炮机枪。它的压倒性的火力，让情势一下子逆转。面对心生退意的队友们，一心追求挑战强者的诗乃将会...</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0201.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0202.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0203.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0200.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第2集&nbsp;冰之狙击手</h3>
+										<p>使用大型反物质狙击枪“黑卡蒂II”而活跃于GGO世界的中的狙击手少女诗乃与她所属的六人中队正在伏击另一组中队。诗乃成功狙击第一目标后，对第二目标——一名巨汉的狙击却是以行动失败收场。同时，该名巨汉在披风下的武器的真面目，居然是一把迷你炮机枪。它的压倒性的火力，让情势一下子逆转。面对心生退意的队友们，一心追求挑战强者的诗乃将会...</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO03" class="row clearfix wow fadeIn" data-wow-duration="2s" data-wow-delay="4.8s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0300.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第3集&nbsp;鲜血的记忆</h3>
+										<p>诗乃，也就是朝田诗乃在现实中的“朋友”远藤等人，以诗乃的弱点“枪”来威胁诗乃交出一万日元，幸好诗乃的朋友新川恭二及时救下了她。回到家后，诗乃仍陷在恐慌之中。其实，诗乃只要看到会让她联想到枪的东西，就会陷入恐慌，而其原因在于她小时候的某一段记忆。 </p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第3集&nbsp;鲜血的记忆</h1></dt>
+								<dd>诗乃，也就是朝田诗乃在现实中的“朋友”远藤等人，以诗乃的弱点“枪”来威胁诗乃交出一万日元，幸好诗乃的朋友新川恭二及时救下了她。回到家后，诗乃仍陷在恐慌之中。其实，诗乃只要看到会让她联想到枪的东西，就会陷入恐慌，而其原因在于她小时候的某一段记忆。 </dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0301.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0302.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0303.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO04" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第4集&nbsp;GGO</h1></dt>
+								<dd>为了调查在虚拟世界向游戏角色开枪而现实世界操纵该角色的人类也跟着死亡的“死枪案”，桐人登入了GGO。来到新的世界后，因为角色的长相而有些无措以及找不到路的桐人向街上遇到的少女诗乃求助。诗乃误将桐人的M9000系列角色看成了女性角色，答应了他的请求，随后，诗乃带着桐人前往了商场。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0401.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0402.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<img alt="140x140" src="img/story2/GGO0403.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" />
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0400.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第4集&nbsp;GGO</h3>
+										<p>为了调查在虚拟世界向游戏角色开枪而现实世界操纵该角色的人类也跟着死亡的“死枪案”，桐人登入了GGO。来到新的世界后，因为角色的长相而有些无措以及找不到路的桐人向街上遇到的少女诗乃求助。诗乃误将桐人的M9000系列角色看成了女性角色，答应了他的请求，随后，诗乃带着桐人前往了商场。</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO05" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0500.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第5集&nbsp;枪与剑</h3>
+										<p>在摩托的飞驰之下，桐人和诗乃到达了总统府，在最后关头成功报名参加了能赢得GGO「最强」称号的比赛“Bullet of Bullets”。而桐人参加BBO是为了出名，让死枪盯上他。在那之前，在准备室换战斗装准备参加预赛的时候，桐人自我介绍，并坦白了自己是男性角色的事实，结果被华丽地打了一巴掌。</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第5集&nbsp;枪与剑</h1></dt>
+								<dd>在摩托的飞驰之下，桐人和诗乃到达了总统府，在最后关头成功报名参加了能赢得GGO「最强」称号的比赛“Bullet of Bullets”。而桐人参加BBO是为了出名，让死枪盯上他。在那之前，在准备室换战斗装准备参加预赛的时候，桐人自我介绍，并坦白了自己是男性角色的事实，结果被华丽地打了一巴掌。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0501.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0502.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0503.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO06" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第6集&nbsp;旷野的决斗</h1></dt>
+								<dd>桐人在预赛获胜，回到休息区待命，却遇到了一个奇怪的玩家。桐人发现他应该是SAO事件的生还者，也是杀人工会的一员。这件事让桐人陷入思考，不久之后他便察觉，那个玩家的声音，跟记录中的"死枪"的声音一样。
+    从本集起OP中“死枪”手中开始没有枪，露出绷带下微笑棺木的标志</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0601.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0602.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0603.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0600.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第6集&nbsp;旷野的决斗</h3>
+										<p>桐人在预赛获胜，回到休息区待命，却遇到了一个奇怪的玩家。桐人发现他应该是SAO事件的生还者，也是杀人工会的一员。这件事让桐人陷入思考，不久之后他便察觉，那个玩家的声音，跟记录中的"死枪"的声音一样。
+    从本集起OP中“死枪”手中开始没有枪，露出绷带下微笑棺木的标志</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO07" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0700.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第7集&nbsp;红色的记忆</h3>
+										<p>桐人的妹妹直叶发现了桐人将账号转移至GGO之中的事。虽然直叶不希望桐人以身试险，但是直叶还是没有太过追究。是夜，桐人突然回忆起SAO自己杀了三名“微笑棺木”的成员的事件，就算那已经过去了一年，桐人还是难以忘却那段记忆，辗转难眠。第二天，在安岐护士的安慰和劝说之下，桐人终于扶正了一点心态，登陆了GGO。</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第7集&nbsp;红色的记忆</h1></dt>
+								<dd>桐人的妹妹直叶发现了桐人将账号转移至GGO之中的事。虽然直叶不希望桐人以身试险，但是直叶还是没有太过追究。是夜，桐人突然回忆起SAO自己杀了三名“微笑棺木”的成员的事件，就算那已经过去了一年，桐人还是难以忘却那段记忆，辗转难眠。第二天，在安岐护士的安慰和劝说之下，桐人终于扶正了一点心态，登陆了GGO。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0701.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0702.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0703.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO08" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第8集&nbsp;Bullet of Bullets</h1></dt>
+								<dd>BoB决赛即将开始，桐人因为其独特的战斗方式而受到了不少玩家的瞩目。桐子卖萌。在休息的时候，桐人对诗乃讲起SAO的那段往事，诗乃表示理解，桐人也下了“我一定会活下来直到与你相遇为止”的决定。二十分钟后，BoB决赛正式开始，在混乱的“ASL诸神之黄昏”之中，“死枪”出现了……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0801.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0802.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0803.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0800.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第8集&nbsp;Bullet of Bullets</h3>
+										<p>BoB决赛即将开始，桐人因为其独特的战斗方式而受到了不少玩家的瞩目。桐子卖萌。在休息的时候，桐人对诗乃讲起SAO的那段往事，诗乃表示理解，桐人也下了“我一定会活下来直到与你相遇为止”的决定。二十分钟后，BoB决赛正式开始，在混乱的“ASL诸神之黄昏”之中，“死枪”出现了……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO09" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO0900.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第9集&nbsp;死枪</h3>
+										<p>破斗篷男在对Pale Rider枪击之后，Pale Rider的HP尽管还有剩余，却还是消失了。破斗篷男自己说出了自己是死枪，并宣言会带来真正的死亡。通过MMOSTREAM节目转播观战BoB的亚丝娜等人，发觉了死枪是Laughing Coffin的原干部，受到了冲击。另一方面，桐人和诗乃为了在出现更多的受害者之前打倒死枪，共同合作追赶死枪，但却使自己陷入了恐慌...</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第9集&nbsp;死枪</h1></dt>
+								<dd>破斗篷男在对Pale Rider枪击之后，Pale Rider的HP尽管还有剩余，却还是消失了。破斗篷男自己说出了自己是死枪，并宣言会带来真正的死亡。通过MMOSTREAM节目转播观战BoB的亚丝娜等人，发觉了死枪是Laughing Coffin的原干部，受到了冲击。另一方面，桐人和诗乃为了在出现更多的受害者之前打倒死枪，共同合作追赶死枪，但却使自己陷入了恐慌......</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0901.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0902.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO0903.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO10" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第10集&nbsp;死之追击者</h1></dt>
+								<dd>受到来自背后的死枪的突袭而走投无路的诗乃，没想到死枪用的手枪是和她曾射杀的抢劫犯用的一样的黑星五四式。死枪为了让桐人认真起来干架，而想杀了因回溯起邮局事件记忆而变得茫然若失的诗乃。但就在黑星扳机扣下前的千钧一发之际，桐人急忙赶到将诗乃救了出来。打算带着丧失了战意的诗乃逃走的桐人，受到了死枪的追击而陷入了困境。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1001.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1002.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1003.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1000.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第10集&nbsp;死之追击者</h3>
+										<p>受到来自背后的死枪的突袭而走投无路的诗乃，没想到死枪用的手枪是和她曾射杀的抢劫犯用的一样的黑星五四式。死枪为了让桐人认真起来干架，而想杀了因回溯起邮局事件记忆而变得茫然若失的诗乃。但就在黑星扳机扣下前的千钧一发之际，桐人急忙赶到将诗乃救了出来。打算带着丧失了战意的诗乃逃走的桐人，受到了死枪的追击而陷入了困境。</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO11" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1100.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第11集&nbsp;强大的意义</h3>
+										<p>从死枪枪下逃脱的桐人和诗乃，藏身在了沙漠地带的洞窟里。在那里桐人研究起了死枪杀害玩家的方法。死枪反击桐人的时候没有用黑星手枪而是换上了狙击枪，从这一点推理出杀害现实世界的玩家是有某些条件的。进一步进行推理的桐人，想到了某种可怕的可能性。</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第11集&nbsp;强大的意义</h1></dt>
+								<dd>从死枪枪下逃脱的桐人和诗乃，藏身在了沙漠地带的洞窟里。在那里桐人研究起了死枪杀害玩家的方法。死枪反击桐人的时候没有用黑星手枪而是换上了狙击枪，从这一点推理出杀害现实世界的玩家是有某些条件的。进一步进行推理的桐人，想到了某种可怕的可能性。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1101.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1102.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1103.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO12" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第12集&nbsp;虚幻的子弹</h1></dt>
+								<dd>GGO玩家桐人和诗乃，死枪和前大会优胜者的暗风了也迎来最终决战。死枪的共犯有好几个人，暗风也成为死枪目标的可能性不能否定，所以桐人比死枪先打倒暗风后，并且也决意击倒死枪。桐人自己成为诱饵，再次出来，诗乃负责协同狙击作战。他那样信赖的回应使诗乃战略瞄准了死枪，桐人终于与死枪对峙,现实世界亚丝娜赶到了桐人身边……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1201.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1202.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1203.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1200.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第12集&nbsp;虚幻的子弹</h3>
+										<p>GGO玩家桐人和诗乃，死枪和前大会优胜者的暗风了也迎来最终决战。死枪的共犯有好几个人，暗风也成为死枪目标的可能性不能否定，所以桐人比死枪先打倒暗风后，并且也决意击倒死枪。桐人自己成为诱饵，再次出来，诗乃负责协同狙击作战。他那样信赖的回应使诗乃战略瞄准了死枪，桐人终于与死枪对峙,现实世界亚丝娜赶到了桐人身边……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO13" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1300.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第13集&nbsp;幽灵子弹</h3>
+										<p>死枪模仿出了GGO里不存在的SAO中的技能"星屑飞溅"，受到他的剑技攻击的桐人，被逼到了绝境。死枪不仅枪法，连剑术都相当高超，被他紧逼着的桐人逐渐被夺去了HP值。另一方面，在和死枪对狙中瞄准镜遭破坏而导致无法狙击的诗乃只能眼睁睁地看着桐人和死枪的战斗。她咬紧牙根拼命思考着眼前自己能够做到的事情。</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第13集&nbsp;幽灵子弹</h1></dt>
+								<dd>死枪模仿出了GGO里不存在的SAO中的技能"星屑飞溅"，受到他的剑技攻击的桐人，被逼到了绝境。死枪不仅枪法，连剑术都相当高超，被他紧逼着的桐人逐渐被夺去了HP值。另一方面，在和死枪对狙中瞄准镜遭破坏而导致无法狙击的诗乃只能眼睁睁地看着桐人和死枪的战斗。她咬紧牙根拼命思考着眼前自己能够做到的事情。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1301.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1302.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1303.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO14" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第14集&nbsp;小小的一步</h1></dt>
+								<dd>将诗乃杀害后自己也会随她而去，这样表述着的恭二猛扑了过来。但是，千钧一发之际桐人赶到，恭二被击飞。互相缠斗的过程中，恭二对着桐人按下了装有毒药的注射器。万幸的是药液并未注入他体内，桐人得以逃过一劫。之后，桐人、诗乃与菊冈会面，了解到了有关此次事件的前因后果。作为死枪之一而被逮捕的男子，委托菊冈给桐人带去了口信。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1401.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1402.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1403.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1400.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第14集&nbsp;小小的一步</h3>
+										<p>将诗乃杀害后自己也会随她而去，这样表述着的恭二猛扑了过来。但是，千钧一发之际桐人赶到，恭二被击飞。互相缠斗的过程中，恭二对着桐人按下了装有毒药的注射器。万幸的是药液并未注入他体内，桐人得以逃过一劫。之后，桐人、诗乃与菊冈会面，了解到了有关此次事件的前因后果。作为死枪之一而被逮捕的男子，委托菊冈给桐人带去了口信。</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO15" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1500.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第15集&nbsp;湖之女王</h3>
+										<p>《ALO》里传出了圣剑Excalibur被发现了的消息。那是几个月前，桐人和莉法在地下世界幽兹海姆救助了名为冬奇（注：妹妹命的名）的邪神时发现了的物品。得知了这个消息的2人，决心赶在其他玩家前取得Excalibur。（于是）叫上了亚丝娜、克莱因、诗乃等人，以7人团队前往迷宫幽兹海姆。</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第15集&nbsp;湖之女王</h1></dt>
+								<dd>《ALO》里传出了圣剑Excalibur被发现了的消息。那是几个月前，桐人和莉法在地下世界幽兹海姆救助了名为冬奇（注：妹妹命的名）的邪神时发现了的物品。得知了这个消息的2人，决心赶在其他玩家前取得Excalibur。（于是）叫上了亚丝娜、克莱因、诗乃等人，以7人团队前往迷宫幽兹海姆。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1501.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1502.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1503.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO16" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第16集&nbsp;巨人之王</h1></dt>
+								<dd>桐人等人从女神兀儿德那里接到了讨伐霜之巨人王Thrym和夺回Excalibur的任务。结衣推测这个任务不是经由运营方的意图，而是由系统自动生成的。那种情况下，根据任务的走向，甚至有破坏《ALO》世界本身的可能……为了在发展成那种状况前完成任务，加紧攻略迷宫的桐人等人，在途中发现了被关在牢笼里求助的女性NPC芙蕾娅。桐人等人怀疑是陷阱，正想加紧前进的时候……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1601.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1602.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1603.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1600.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第16集&nbsp;巨人之王</h3>
+										<p>桐人等人从女神兀儿德那里接到了讨伐霜之巨人王Thrym和夺回Excalibur的任务。结衣推测这个任务不是经由运营方的意图，而是由系统自动生成的。那种情况下，根据任务的走向，甚至有破坏《ALO》世界本身的可能……为了在发展成那种状况前完成任务，加紧攻略迷宫的桐人等人，在途中发现了被关在牢笼里求助的女性NPC芙蕾娅。桐人等人怀疑是陷阱，正想加紧前进的时候……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO17" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1700.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第17集&nbsp;圣剑Excalibur</h3>
+										<p>桐人一行人终于来到了地下迷宫的最底层的房间，并与最终BOSS索列姆展开了对决。但是BOSS索列姆的HP相当难削，而且还有强力的冰系攻击。正当大家陷入苦战时，中途加入的NPC芙蕾娅表示，要打到索列姆，就必须使用被索列姆掠来并藏在这个房间中的，本族的密宝——“黄金之锤”。在莉法的提醒下，桐人终于成功地使用雷系技能找到了金锤，并把它交给索列姆。而接过金锤的芙蕾娅，也开始了某种剧烈变化……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第17集&nbsp;圣剑Excalibur</h1></dt>
+								<dd>风精灵莉法遭到正在狩猎玩家的火精灵攻击，并且被守护精灵的桐人所救。带著化为导航精灵的结衣的桐人虽然攻击技巧高明，却对ALO世界一无所知。莉法为了感谢桐人的救助，决定带著桐人前往风精灵首都－司伊鲁班。</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1701.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1702.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1703.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO18" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第18集&nbsp;森林之家</h1></dt>
+								<dd>随着ALO的更新，新生艾恩葛朗特的第21至30层即将解禁，成为可攻略区域，而其中的第22层，正是桐人、亚丝娜以及结衣三人在SAO时代的玩家住所的所在地。随着更新日期的临近，他们与一起经历过SAO时代的好友们，对再在小屋中团聚的期待也是与日俱增。终于，在更新上线的圣诞夜，众人齐心协力，迅速地打倒了第21层的BOSS，三人更是一到达22层就飞向曾经林中小屋，并再度将其购入，成为玩家住所。而在之后小屋中的某次普通的学习会中，莉兹向亚丝娜提起了一个号称“绝剑”的神秘玩家的事……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1801.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1802.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1803.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1800.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第18集&nbsp;森林之家</h3>
+										<p>随着ALO的更新，新生艾恩葛朗特的第21至30层即将解禁，成为可攻略区域，而其中的第22层，正是桐人、亚丝娜以及结衣三人在SAO时代的玩家住所的所在地。随着更新日期的临近，他们与一起经历过SAO时代的好友们，对再在小屋中团聚的期待也是与日俱增。终于，在更新上线的圣诞夜，众人齐心协力，迅速地打倒了第21层的BOSS，三人更是一到达22层就飞向曾经林中小屋，并再度将其购入，成为玩家住所。而在之后小屋中的某次普通的学习会中，莉兹向亚丝娜提起了一个号称“绝剑”的神秘玩家的事……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO19" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO1900.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第19集&nbsp;绝剑</h3>
+										<p>亚丝娜和伙伴们一起做作业，因为桐人睡觉大家都有了睡意。亚丝娜退出了游戏，但是心情很不好。亚丝娜来到餐桌上，她妈妈提出以后不可以迟到。因为她妈妈要为她转学，让她离开ALO玩家聚集的学校，亚丝娜很不高兴，据理力争，认为自己可以选择自己的人生。但是她妈妈说，希望她能和初中时期的同学一样考上大学，不要耽误时间，希望她以后生活上物质充裕一些。亚丝娜提到回本家时的男子，妈妈说那是选择给她的对象，但亚丝娜不同意，知道了妈妈调差过她，因此提出须乡的事情。最后问妈妈，是不是因为自己不是出生于名门而惭愧。
+    亚丝娜登入游戏，开始了与绝剑的战斗，认为自己只能在游戏中当个剑士，但是绝剑是个女孩子让她惊讶，认为桐人输了是因为他放水。经过激战，亚丝娜败于绝剑的十一连击，但是绝剑手下留情，并拉着她飞向空中。在空中，绝剑向亚丝娜提出请求……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第19集&nbsp;绝剑</h1></dt>
+								<dd>亚丝娜和伙伴们一起做作业，因为桐人睡觉大家都有了睡意。亚丝娜退出了游戏，但是心情很不好。亚丝娜来到餐桌上，她妈妈提出以后不可以迟到。因为她妈妈要为她转学，让她离开ALO玩家聚集的学校，亚丝娜很不高兴，据理力争，认为自己可以选择自己的人生。但是她妈妈说，希望她能和初中时期的同学一样考上大学，不要耽误时间，希望她以后生活上物质充裕一些。亚丝娜提到回本家时的男子，妈妈说那是选择给她的对象，但亚丝娜不同意，知道了妈妈调差过她，因此提出须乡的事情。最后问妈妈，是不是因为自己不是出生于名门而惭愧。
+    亚丝娜登入游戏，开始了与绝剑的战斗，认为自己只能在游戏中当个剑士，但是绝剑是个女孩子让她惊讶……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1901.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1902.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO1903.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO20" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第20集&nbsp;沉睡骑士</h1></dt>
+								<dd>在有纪的带领下，亚丝娜与一个名叫“沉睡骑士”的公会的成员们见了面。“沉睡骑士”的成员们，是一群在虚拟环境中相识，并一起享受游戏乐趣的好友，由于各种各样的原因，这个公会将在来年春天解散，为此，他们决定以单小队攻略楼层BOSS的方式作为纪念——在新ALO的艾恩葛朗特第一层中，有着记录首个攻略一层BOSS的玩家ID的“剑士之碑”，如果是数个小队组成的联队完成攻略的话，则记录各小队的队长的ID，但如果只是一个小队的话，则所有成员的ID都会被铭刻在碑上。可惜的是一般对楼层BOSS的攻略需要七支七人联队约49人的规模，他们之前对25、26层BOSS的挑战也都以失败告终，现在“沉睡骑士”已有六人，而一个小队允许的最大成员数为七人，在有纪以原创剑技为赌注吸引强者挑战这一番搜寻后，苦寻强力的第七人的他们终于迎来了亚丝娜的加入。
+    然而他们在第一次对第27层BOSS进行试探性攻略时，却发现了隐藏在BOSS房间入口前的不速之客……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2001.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2002.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2003.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO2000.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第20集&nbsp;沉睡骑士</h3>
+										<p>在有纪的带领下，亚丝娜与一个名叫“沉睡骑士”的公会的成员们见了面。“沉睡骑士”的成员们，是一群在虚拟环境中相识，并一起享受游戏乐趣的好友，由于各种各样的原因，这个公会将在来年春天解散，为此，他们决定以单小队攻略楼层BOSS的方式作为纪念——在新ALO的艾恩葛朗特第一层中，有着记录首个攻略一层BOSS的玩家ID的“剑士之碑”，如果是数个小队组成的联队完成攻略的话，则记录各小队的队长的ID，但如果只是一个小队的话，则所有成员的ID都会被铭刻在碑上。可惜的是一般对楼层BOSS的攻略需要七支七人联队约49人的规模，他们之前对25、26层BOSS的挑战也都以失败告终，现在“沉睡骑士”已有六人，而一个小队允许的最大成员数为七人，在有纪以原创剑技为赌注吸引强者挑战这一番搜寻后，苦寻强力的第七人的他们终于迎来了亚丝娜的加入。
+    然而他们在第一次对第27层BOSS进行试探性攻略时，却发现了隐藏在BOSS房间入口前的不速之客……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO21" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO2100.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第21集&nbsp;剑士之碑</h3>
+										<p>亚丝娜与“沉睡骑士”一行人对27层BOSS试探性攻略果然被其他公会窥视了，于是他们决定立即折返，以赶在大公会集结完人员前展开正式攻略。但当他们到达BOSS房间门口时，却看到这里已经聚集了不少人，他们在等大部队到齐。当亚丝娜他们想要通过他们进入BOSS房间时，不出意外地被他们拦下，“既然你们现在不打算进房间打BOSS，那就让开！”“抱歉，现在这里禁止通行。”得到这样的回应，亚丝娜和有纪他们摆开架势打算强突，但这时，对方的大部队好像赶到，千钧一发之际，桐人突然出现，挡在大部队前，表示能帮亚丝娜他们争取三分钟。于是亚丝娜他们力战盘踞在门口的人群后，终于进入房间，展开了正式的BOSS攻略……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第21集&nbsp;剑士之碑</h1></dt>
+								<dd>亚丝娜与“沉睡骑士”一行人对27层BOSS试探性攻略果然被其他公会窥视了，于是他们决定立即折返，以赶在大公会集结完人员前展开正式攻略。但当他们到达BOSS房间门口时，却看到这里已经聚集了不少人，他们在等大部队到齐。当亚丝娜他们想要通过他们进入BOSS房间时，不出意外地被他们拦下，“既然你们现在不打算进房间打BOSS，那就让开！”“抱歉，现在这里禁止通行。”得到这样的回应，亚丝娜和有纪他们摆开架势打算强突，但这时，对方的大部队好像赶到，千钧一发之际，桐人突然出现，挡在大部队前，表示能帮亚丝娜他们争取三分钟。于是亚丝娜他们力战盘踞在门口的人群后，终于进入房间，展开了正式的BOSS攻略……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2101.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2102.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2103.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO22" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第22集&nbsp;旅途的尽头</h1></dt>
+								<dd>Boss攻略成功之后，面对下线的优纪，亚丝娜不知所措。她找到朱涅，和朱涅交谈后，朱涅亚也突然下线。亚丝娜不知道如何再见优纪时，桐人给了她一个地址。亚丝娜找到了那个地址，发现那是家医院。经询问之后，亚丝娜找到了优纪的主治医师。医生将优纪的情况告诉了亚丝娜，她下决心再见优纪，坚定的来到了病房前……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2201.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2202.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2203.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO2200.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第22集&nbsp;旅途的尽头</h3>
+										<p>Boss攻略成功之后，面对下线的优纪，亚丝娜不知所措。她找到朱涅，和朱涅交谈后，朱涅亚也突然下线。亚丝娜不知道如何再见优纪时，桐人给了她一个地址。亚丝娜找到了那个地址，发现那是家医院。经询问之后，亚丝娜找到了优纪的主治医师。医生将优纪的情况告诉了亚丝娜，她下决心再见优纪，坚定的来到了病房前……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="GGO23" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 right_to_left">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO2300.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第23集&nbsp;梦想的开端</h3>
+										<p>为了圆优纪上学的梦想，桐人和同学做出来可视化设备帮助她。亚丝娜向优纪介绍学校，并让老师同意了优纪上课的请求。在国文课上，老师让优纪朗读芥川龙之介的《斗车》，优纪的朗读赢得了大家的好评。下课后，优纪求亚丝娜带她到她曾居住过一年的温暖的家。
+    亚丝娜回到家里后，正式向妈妈提出了自己的要求，二人一起来到了VR世界……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第23集&nbsp;梦想的开端</h1></dt>
+								<dd>为了圆优纪上学的梦想，桐人和同学做出来可视化设备帮助她。亚丝娜向优纪介绍学校，并让老师同意了优纪上课的请求。在国文课上，老师让优纪朗读芥川龙之介的《斗车》，优纪的朗读赢得了大家的好评。下课后，优纪求亚丝娜带她到她曾居住过一年的温暖的家。
+    亚丝娜回到家里后，正式向妈妈提出了自己的要求，二人一起来到了VR世界……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2301.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2302.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2303.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+					</div>
+					<div id="GGO24" class="row clearfix wow fadeIn" data-wow-duration="2s">
+						<div class="col-md-7 column">
+							<dl>
+								<dt><h1>第24集&nbsp;圣母圣咏</h1></dt>
+								<dd>亚丝娜将以前的朋友和新的朋友叫到一起，开起了盛大的聚会……</dd>
+							</dl>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2401.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2402.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+								<div class="col-md-4 col-sm-4 col-xs-4"><img alt="140x140" src="img/story2/GGO2403.png" data-action="zoom" style="border-radius: 20px; width: 100%; margin: 10px 0;" /></div>
+							</div>
+						</div>
+						<div class="col-md-5 hidden-sm hidden-xs column">
+							<div class="ih-item square effect10 left_to_right">
+								<a>
+									<div class="img"><img alt="140x140" src="img/story2/GGO2400.png" data-action="zoom" style="border-radius: 20px; width: 400px; height: 300px;" /></div>
+									<div class="info">
+										<h3>第24集&nbsp;圣母圣咏</h3>
+										<p>亚丝娜将以前的朋友和新的朋友叫到一起，开起了盛大的聚会……</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</section>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/demo.js"></script>
+	</body>
+
+</html>
+
+<script>
+	var canvas = document.getElementById("canvas");
+	var can = canvas.getContext("2d");
+	var s = window.screen; //获取屏幕
+	var w = canvas.width = s.width; //获取屏幕宽度
+	var h = canvas.height = s.height; //获取屏幕高度
+
+	can.fillStyle = color2();
+
+	var words = Array(256).join("1").split("");
+	//设置一个包含256个空元素的数组，join("1")用来把数组里的元素拼接成字符串，split("")过滤掉数组里的空元素
+
+	setInterval(draw, 50);
+
+	// can.font="30px 微软雅黑"; //只设置一个不生效，一定要两个属性都设
+	// //绘制实心的文本：绘制的文本，文本的坐标x，文本的坐标y
+	// can.fillText("黑客帝国",100,100);
+	// // setInterval(draw,50);
+
+	function draw() {
+		//can.fillRect()画一个实心矩形:坐标x，坐标y，矩形宽，举行高
+		can.fillStyle = 'rgba(0,0,0,0.05)';
+		can.fillRect(0, 0, w, h);
+		can.fillStyle = color2();
+		words.map(function(y, n) {
+			text = String.fromCharCode(Math.ceil(65 + Math.random() * 57)); //转换为键盘上值
+			x = n * 10;
+			can.fillText(text, x, y)
+			words[n] = (y > 758 + Math.random() * 484 ? 0 : y + 10);
+		}); //数组元素的一个映射
+	}
+
+	//获取随机颜色，三种方法
+	function color1() {
+		var colors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+		var color = "";
+		for(var i = 0; i < 6; i++) {
+			//Math.random()产生一个0-1之间的小数
+			var n = Math.ceil(Math.random() * 15);
+			color += "" + colors[n];
+			// console.log(color);
+		}
+		return '#' + color;
+	}
+
+	function color2() {
+		var color = Math.ceil(Math.random() * 16777215).toString(16);
+		// for( var i=color.length; i<6; i++ ){
+		// 	color = '0'+color;
+		// }
+		while(color.length < 6) {
+			color = '0' + color;
+		}
+		return '#' + color;
+	}
+
+	function color3() {
+		return "#" + (function(color) {
+			return new Array(7 - color.length).join("0") + color;
+			//神奇的方法，总共字符串有6位，如果只产生了3位，则前面应该补三个0，在长度为7-3=4的空数组中利用join插入0，则为['',0,'',0,'',0,''],刚好三个0补在前面
+		})((Math.random() * 0x1000000 << 0).toString(16))
+		// << 0 也是一种取整的方法
+	}
+</script>
+<script src="demo.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#daohang").click(function() {
+			$("#xuanzhuan").slideToggle();
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#shouhui").click(function() {
+			$(".wrapper").slideToggle();
+		});
+	});
+	new WOW().init();
+	
+	
+	$('#GGO01 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO01').offset().top}, 800);
+ });
+ 	$('#GGO02 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO02').offset().top}, 800);
+ });
+ 	$('#GGO03 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO03').offset().top}, 800);
+ });
+ 	$('#GGO04 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO04').offset().top}, 800);
+ });
+ 	$('#GGO05 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO05').offset().top}, 800);
+ });
+ 	$('#GGO06 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO06').offset().top}, 800);
+ });
+ 	$('#GGO07 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO07').offset().top}, 800);
+ });
+ 	$('#GGO08 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO08').offset().top}, 800);
+ });
+ 	$('#GGO09 a').click(function(){
+  $('html,body').animate({scrollTop:$('#GGO09').offset().top}, 800);
+ });
+	$('#GGO10 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO10').offset().top}, 800);
+});
+	$('#GGO11 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO11').offset().top}, 800);
+});
+	$('#GGO12 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO12').offset().top}, 800);
+});
+	$('#GGO13 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO13').offset().top}, 800);
+});
+	$('#GGO14 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO14').offset().top}, 800);
+});
+	$('#GGO15 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO15').offset().top}, 800);
+});
+	$('#GGO16 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO16').offset().top}, 800);
+});
+	$('#GGO17 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO17').offset().top}, 800);
+});
+	$('#GGO18 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO18').offset().top}, 800);
+});
+	$('#GGO19 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO19').offset().top}, 800);
+});
+	$('#GGO20 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO20').offset().top}, 800);
+});
+	$('#GGO21 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO21').offset().top}, 800);
+});
+	$('#GGO22 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO22').offset().top}, 800);
+});
+	$('#GGO23 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO23').offset().top}, 800);
+});
+	$('#GGO24 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO24').offset().top}, 800);
+});
+	$('#GGO25 a').click(function(){
+	  $('html,body').animate({scrollTop:$('#GGO25').offset().top}, 800);
+});
+</script>

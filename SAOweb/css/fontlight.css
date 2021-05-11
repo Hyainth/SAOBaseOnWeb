@@ -1,0 +1,103 @@
+light1 p a{
+  text-decoration:none; 
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+#light1 p:nth-child(1) a{
+  color:black;
+  font-family:'楷体';
+}
+#light1 p:nth-child(1) a:hover{ 
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate; 
+}
+
+
+#light1 p a:hover{
+color:#31B0D5;  
+font-family:'楷体';
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FFF,
+               0 0 70px  #FFF,
+               0 0 80px  #FFF,
+               0 0 100px #FFF,
+               0 0 150px #FFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FFF,
+               0 0 35px #FFF,
+               0 0 40px #FFF,
+               0 0 50px #FFF,
+               0 0 75px #FFF;
+  }
+}
+
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FFF,
+               0 0 70px  #FFF,
+               0 0 80px  #FFF,
+               0 0 100px #FFF,
+               0 0 150px #FFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FFF,
+               0 0 35px #FFF,
+               0 0 40px #FFF,
+               0 0 50px #FFF,
+               0 0 75px #FFF;
+  }
+}
+
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FFF,
+               0 0 70px  #FFF,
+               0 0 80px  #FFF,
+               0 0 100px #FFF,
+               0 0 150px #FFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FFF,
+               0 0 35px #FFF,
+               0 0 40px #FFF,
+               0 0 50px #FFF,
+               0 0 75px #FFF;
+  }
+}
+
+
+@media (max-width: 650px) {
+  
+  #light1 p{
+    font-size:3.5em;
+  }
+
+}

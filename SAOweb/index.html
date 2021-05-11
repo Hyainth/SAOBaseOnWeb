@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="css/homestyle.css" />
+		<link rel="stylesheet" href="css/zoom.css"/>
+		<link rel="stylesheet" href="css/fontlight.css" type="text/css" />	
+		<link rel="stylesheet" href="css/animate.css" />
+	</head>
+
+	<style>
+		.section {
+			text-align: center;
+			font: 50px "Microsoft Yahei";
+			color: #fff;
+		}
+		
+		.zoom-overlay{
+			background-color: rgba(0,0,0,0.7);
+		}
+		
+	</style>
+
+	<body style="background: deepskyblue;">
+
+		<div style="position: fixed;top: 350px;left: 50px;z-index:9">
+			<ul id="menu">
+				<a href="#page1">
+					<div style="width:15px;height:15px;background-image: url(img/navbutton/navbutton_red.png);background-size: cover;">
+						<li data-menuanchor="page1"></li>
+					</div>
+				</a><br /><br /><br />
+				<a href="#page2">
+					<div style="width:15px;height:15px;background-image: url(img/navbutton/navbutton_blue.png);background-size: cover;">
+						<li data-menuanchor="page2"></li>
+					</div>
+				</a><br /><br /><br />
+				<a href="#page3">
+					<div style="width:15px;height:15px;background-image: url(img/navbutton/navbutton_gray.png);background-size: cover;">
+						<li data-menuanchor="page3"></li>
+					</div>
+				</a><br /><br /><br />
+				<a href="#page4">
+					<div style="width:15px;height:15px;background-image: url(img/navbutton/navbutton_green.png);background-size: cover;">
+						<li data-menuanchor="page4"></li>
+					</div>
+				</a><br /><br /><br />
+			</ul>
+		</div>
+
+		<nav class="cd-vertical-nav">
+			<ul>
+				<li>
+					<a href="index.html"><span class="label">首页</span></a>
+				</li>
+				<li>
+					<a href="storyMain.html"><span class="label">剧情</span></a>
+				</li>
+				<li>
+					<a href="role.html"><span class="label">人物</span></a>
+				</li>
+				<li>
+					<a href="hobby.html"><span class="label">周边</span></a>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="dowebok">
+
+			<div class="section" style="background-image:url(img/Home/home_bg1.png);background-size: cover;color: black;">
+				
+				
+				<img src="img/homelogo2.png" style="width:150px;height:65px;position: absolute;left: 3%;top: 3%;" class="wow slideInLeft">
+				<div id="light1" class="wow flipInX"><p><a style="font-size: 175px;">刀&nbsp;剑&nbsp;神&nbsp;域</a></p></div>
+				<img src="img/SAO-logo.png" class="wow slideInDown">
+				
+			</div>
+
+			<div class="section" style="background-image:url(img/Home/home_bg2.png);background-size: cover;">
+
+
+			<img src="img/Home/jvqing/jvqing1.jpg" id="jvqing1"/>
+			<img src="img/Home/jvqing/jvqing2.jpg" id="jvqing2"/>
+			<img src="img/Home/jvqing/jvqing3.jpg" id="jvqing3"/>
+			<img src="img/Home/jvqing/jvqing4.jpg" id="jvqing4"/>
+			
+					<div id="jvqing">
+						<a href="storyMain.html"><p style="font-size: 125px;font-family: '楷体';">剧情介绍</p></a>
+					</div>
+				
+				
+			</div>
+
+			<div class="section" style="background-image:url(img/Home/home_bg3.png);background-size: cover;">
+
+				<a href="role.html#kirito"><img src="img/Home/renwu1.png" id="renwu1"/></a>
+				<a href="role.html#asuna"><img src="img/Home/renwu2.png" id="renwu2"/></a>
+				<div id="renwu">
+					<a href="role.html"><p style="font-size: 125px;font-family: '楷体';">人物介绍</p></a>
+				</div>
+			</div>
+
+			<div class="section" style="background-image:url(img/Home/home_bg4.png);background-size: cover;">
+					<div id="IGL"><a href="aien.html">艾恩葛朗特介绍</a></div>
+					<div style="height: 30%;width: 70%;margin: 0 auto;">
+						<a href="gallery.html"><div id="gallery"><p>画廊</p></div><a>
+						<a href="https://baike.baidu.com/item/A-1%20Pictures/1264976?fr=aladdin"><div id="producer"><p>制作方</p></div><a>
+					</div>
+			</div>
+
+	</body>
+
+</html>
+
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<script type="text/javascript" src="js/zoom.js" ></script>
+<script src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/wow.min.js" ></script>
+<script>
+	$(function() {
+		$('#dowebok').fullpage({
+			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+			anchors: ['page1', 'page2', 'page3', 'page4'],
+			scrollBar: true,
+			menu: '#menu'
+		});
+		
+		$(window).resize(function() {
+			autoScrolling();
+		});
+
+		function autoScrolling() {
+			var $ww = $(window).width();
+			if($ww < 1024) {
+				$.fn.fullpage.setAutoScrolling(false);
+			} else {
+				$.fn.fullpage.setAutoScrolling(true);
+			}
+		}
+
+		autoScrolling();
+	});
+</script>
+
+<script>
+	new WOW().init();
+</script>

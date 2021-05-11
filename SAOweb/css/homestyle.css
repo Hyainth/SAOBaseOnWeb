@@ -1,0 +1,141 @@
+#jvqing{
+	background-color: rgba(100,100,100,0.45);
+	width: 50%;
+	height: 20%;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: 2px solid #000000;
+}
+
+#jvqing p{
+	line-height: 150%;
+	color:#000000;
+}
+
+
+#jvqing1{
+	position: absolute;
+	top:5%;
+	left:15%;
+	width:400px;
+	height:240px;
+	border-radius: 10px;
+	border:1px solid #000000;
+	transform:rotate(-15deg);
+}
+
+#jvqing2{
+	position: absolute;
+	top:5%;
+	right:15%;
+	width:400px;
+	height:240px;
+	border-radius: 10px;
+	border:1px solid #000000;
+	transform:rotate(10deg);
+}
+
+#jvqing3{
+	position: absolute;
+	bottom:5%;
+	left:15%;
+	width:400px;
+	height:240px;
+	border-radius: 10px;
+	border:1px solid #000000;
+	transform:rotate(9deg);
+}
+
+#jvqing4{
+	position: absolute;
+	bottom:5%;
+	right:15%;
+	width:400px;
+	height:240px;
+	border-radius: 10px;
+	border:1px solid #000000;
+	transform:rotate(-15deg);
+}
+
+#renwu{
+	background-color: rgba(100,100,100,0.45);
+	width: 50%;
+	height: 20%;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: 2px solid #000000;
+}
+
+#renwu1{
+	position: absolute;
+	top:50px;
+	left:170px;
+	width:600px;
+	height:660px;
+}
+
+#renwu p{
+	line-height: 150%;
+	color:#000000;
+}
+
+
+#renwu2{
+	position: absolute;
+	top:50px;
+	right:130px;
+	width:600px;
+	height:660px;
+}
+
+#IGL{
+
+	width: 70%;
+	height: 30%;
+	margin: 0 auto;
+	position: relative;
+	bottom:10%;
+	border-radius: 30px;
+	
+	background:url(../img/Home/IGL.png);
+	background-size: cover;
+}
+
+#IGL a{
+	position: relative;
+	top:30%;
+	color: #000;
+	font-weight: bold;
+}
+
+.section #gallery{
+	background: url(../img/Home/hualang.png);
+	background-size: cover;
+	height: 100%;
+	width: 43%;
+	float:left;
+	border-radius: 30px;
+	border:3px solid #000000;
+}
+
+.section #producer{
+	background: url(../img/Home/A1.png);
+	background-size: cover;
+	height: 100%;
+	width: 43%;
+	float: right;
+	border-radius: 30px;
+	border:3px solid #000000;
+}
+
+.section #producer p,
+.section #gallery p{
+	position: relative;
+	top:30%;
+	color: #000;
+	font-weight: bold;
+}
+
+
+
+

@@ -1,0 +1,212 @@
+$(document).ready(function(){
+  $("#kiritobt1").click(function(){
+    $("#kiritoimg").attr('src',"img/role/kirito/kirito5.png"); 
+    $("#kiritobt1").addClass("active").siblings().removeClass("active");
+      });
+});
+$(document).ready(function(){
+  $("#kiritobt2").click(function(){
+    $("#kiritoimg").attr('src',"img/role/kirito/kirito6.png"); 
+    $("#kiritobt2").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#kiritobt3").click(function(){
+    $("#kiritoimg").attr('src',"img/role/kirito/kirito7.png"); 
+    $("#kiritobt3").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#kiritobt4").click(function(){
+    $("#kiritoimg").attr('src',"img/role/kirito/kirito2.png"); 
+    $("#kiritobt4").addClass("active").siblings().removeClass("active");
+  });
+});
+
+
+
+$(document).ready(function(){
+  $("#asunabt1").click(function(){
+    $("#asunaimg").attr('src',"img/role/asuna/asuna1.png"); 
+    $("#asunabt1").addClass("active").siblings().removeClass("active");
+      });
+});
+$(document).ready(function(){
+  $("#asunabt2").click(function(){
+    $("#asunaimg").attr('src',"img/role/asuna/asuna2.png"); 
+    $("#asunabt2").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#asunabt3").click(function(){
+    $("#asunaimg").attr('src',"img/role/asuna/asuna4.png"); 
+    $("#asunabt3").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#asunabt4").click(function(){
+    $("#asunaimg").attr('src',"img/role/asuna/asuna0.png"); 
+    $("#asunabt4").addClass("active").siblings().removeClass("active");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#yuibt1").click(function(){
+    $("#yuiimg").attr('src',"img/role/yui/yui3.png"); 
+    $("#yuibt1").addClass("active").siblings().removeClass("active");
+      });
+});
+$(document).ready(function(){
+  $("#yuibt2").click(function(){
+    $("#yuiimg").attr('src',"img/role/yui/yui4.png"); 
+    $("#yuibt2").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#yuibt3").click(function(){
+    $("#yuiimg").attr('src',"img/role/yui/yui2.png"); 
+    $("#yuibt3").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#yuibt4").click(function(){
+    $("#yuiimg").attr('src',"img/role/yui/yui1.png"); 
+    $("#yuibt4").addClass("active").siblings().removeClass("active");
+  });
+});
+
+
+$(document).ready(function(){
+  $("#rizbt1").click(function(){
+    $("#rizimg").attr('src',"img/role/riz/riz3.png"); 
+    $("#rizbt1").addClass("active").siblings().removeClass("active");
+      });
+});
+$(document).ready(function(){
+  $("#rizbt2").click(function(){
+    $("#rizimg").attr('src',"img/role/riz/riz6.png"); 
+    $("#rizbt2").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#rizbt3").click(function(){
+    $("#rizimg").attr('src',"img/role/riz/riz0.png"); 
+    $("#rizbt3").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#rizbt4").click(function(){
+    $("#rizimg").attr('src',"img/role/riz/riz5.png"); 
+    $("#rizbt4").addClass("active").siblings().removeClass("active");
+  });
+});
+
+
+
+
+$(document).ready(function(){
+  $("#silicabt1").click(function(){
+    $("#silicaimg").attr('src',"img/role/silica/silica6.png"); 
+    $("#silicabt1").addClass("active").siblings().removeClass("active");
+      });
+});
+$(document).ready(function(){
+  $("#silicabt2").click(function(){
+    $("#silicaimg").attr('src',"img/role/silica/silica5.png"); 
+    $("#silicabt2").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#silicabt3").click(function(){
+    $("#silicaimg").attr('src',"img/role/silica/silica4.png"); 
+    $("#silicabt3").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#silicabt4").click(function(){
+    $("#silicaimg").attr('src',"img/role/silica/silica3.png"); 
+    $("#silicabt4").addClass("active").siblings().removeClass("active");
+  });
+});
+
+
+
+$(document).ready(function(){
+  $("#shinonbt1").click(function(){
+    $("#shinonimg").attr('src',"img/role/shinon/shinon3.png"); 
+    $("#shinonbt1").addClass("active").siblings().removeClass("active");
+      });
+});
+$(document).ready(function(){
+  $("#shinonbt2").click(function(){
+    $("#shinonimg").attr('src',"img/role/shinon/shinon6.png"); 
+    $("#shinonbt2").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#shinonbt3").click(function(){
+    $("#shinonimg").attr('src',"img/role/shinon/shinon7.png"); 
+    $("#shinonbt3").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#shinonbt4").click(function(){
+    $("#shinonimg").attr('src',"img/role/shinon/shinon2.png"); 
+    $("#shinonbt4").addClass("active").siblings().removeClass("active");
+  });
+});
+
+
+
+$(document).ready(function(){
+  $("#reefabt1").click(function(){
+    $("#reefaimg").attr('src',"img/role/reefa/reefa1.png"); 
+    $("#reefabt1").addClass("active").siblings().removeClass("active");
+      });
+});
+$(document).ready(function(){
+  $("#reefabt2").click(function(){
+    $("#reefaimg").attr('src',"img/role/reefa/reefa6.png"); 
+    $("#reefabt2").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#reefabt3").click(function(){
+    $("#reefaimg").attr('src',"img/role/reefa/reefa3.png"); 
+    $("#reefabt3").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#reefabt4").click(function(){
+    $("#reefaimg").attr('src',"img/role/reefa/reefa4.png"); 
+    $("#reefabt4").addClass("active").siblings().removeClass("active");
+  });
+});
+
+
+
+$(document).ready(function(){
+  $("#yuukibt1").click(function(){
+    $("#yuukiimg").attr('src',"img/role/yuuki/yuuki5.png"); 
+    $("#yuukibt1").addClass("active").siblings().removeClass("active");
+      });
+});
+$(document).ready(function(){
+  $("#yuukibt2").click(function(){
+    $("#yuukiimg").attr('src',"img/role/yuuki/yuuki4.png"); 
+    $("#yuukibt2").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#yuukibt3").click(function(){
+    $("#yuukiimg").attr('src',"img/role/yuuki/yuuki3.png"); 
+    $("#yuukibt3").addClass("active").siblings().removeClass("active");
+  });
+});
+$(document).ready(function(){
+  $("#yuukibt4").click(function(){
+    $("#yuukiimg").attr('src',"img/role/yuuki/yuuki6.png"); 
+    $("#yuukibt4").addClass("active").siblings().removeClass("active");
+  });
+});
